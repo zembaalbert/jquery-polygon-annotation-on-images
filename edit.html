@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title>Polygon Annotation Demo</title>
+	
+	<!-- Required stuff. Include from your server if you want. Make sure you don't include twice (i.e. if you already include them in your project) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+
+	<!-- The plugin -->
+	<script src="annotation.js"></script>
+</head>
+
+<body style="font-family: arial;">
+	<div id="annotation"></div>
+	
+	<br/>
+	<form action="view.php" method="post" target="_blank">
+		<input type="hidden" id="annotationsJSON" name="annotationsJSON" />
+		<input type="hidden" name="image" value="img.jpg" />
+		<button type="submit">Open for view</button>
+	</form>
+	
+	<script type="text/javascript">
+		$('#annotation').annotation({
+			image: 'img.jpg',
+			editable: true,
+			hiddenInputId: 'annotationsJSON'
+		});
+	</script>
+</body>
+
+</html>
+
+
+
+
+
