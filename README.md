@@ -1,6 +1,6 @@
 # jQuery plugin for polygonal annotations
 
-Demo at http://jsfiddle.net/bqyxuhgb/21/
+**NEW** Demo at http://jsfiddle.net/bqyxuhgb/24/ (previous links might not work)
 
 There are lots of plugins and tools for both jQuery and raw JavaScript for adding annotations to an image. But all of them seems to support very simple shapes (like rectangels or points). Here's one that can be used to add poligon shaped annotations.
 
